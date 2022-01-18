@@ -14,7 +14,7 @@ VALUES
     ("Label Owner", "5000000", 4),
 
 
-INSERT INTO departments (first_name, last_name, roles_id)
+INSERT INTO employees (first_name, last_name, roles_id)
 VALUES 
     ("J", "Cole", 1),
     ("Metro", "Boomin", 2),
