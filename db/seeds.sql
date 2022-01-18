@@ -9,9 +9,9 @@ VALUES
 INSERT INTO roles (title, salary, departments_id)
 VALUES 
     ("JCole", "5000000", 1),
-    ("MetroBoomin", "1000000", 2),
-    ("JCole", "5000000", 1),
-    ("JCole", "5000000", 1),
+    ("MetroBoomin", "3000000", 2),
+    ("Ibrahim Hamad", "1000000", 3),
+    ("Jay-Z", "5000000", 4),
 
 
 INSERT INTO departments (name)
