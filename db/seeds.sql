@@ -14,9 +14,9 @@ VALUES
     ("Label Owner", "5000000", 4),
 
 
-INSERT INTO departments (name)
+INSERT INTO departments (first_name, last_name, roles_id)
 VALUES 
-    ("Artist"),
-    ("producer"),
-    ("Agent"),
-    ("Label Owner");
+    ("J", "Cole", 1),
+    ("Metro", "Boomin", 2),
+    ("Ibrahim", "Hamad", 3),
+    ("Jay", "Z", 4),
