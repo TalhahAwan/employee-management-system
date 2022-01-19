@@ -12,3 +12,25 @@ const db = mysql.createConnection(
     console.log(`Connected to the work_db database.`)
   );
   
+  const questions = () => {
+      inquirer.prompt([
+          {
+              type: "list",
+              name: "multipleChoices",
+              message: "What would you like to do?",
+              choices: [
+                  "View departments",
+                  "Add department",
+                  "View roles",
+                  "Add role",
+                  "View employees",
+                  "add employee",
+                  "Update employee role",
+                  "Quit",
+              ]
+          },
+      ])
+      .then(answer => {
+          
+      })
+  }
