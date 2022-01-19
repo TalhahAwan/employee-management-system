@@ -51,7 +51,7 @@ const questions = () => {
                 addEmployee();
                 break;
             case "Update employee role":
-                updateEmployee();
+                updateEmployeeRole();
                 break;
             case "Quit":
                 db.end();
@@ -66,7 +66,7 @@ const viewDepartments = () => {
     db.query(`SELECT * FROM departments;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
@@ -75,7 +75,7 @@ const viewRoles = () => {
     db.query(`SELECT * FROM roles;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
@@ -84,44 +84,48 @@ const viewEmployees = () => {
     db.query(`SELECT * FROM employees;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
 
-const viewDepartments = () => {
+const addDepartment = () => {
     db.query(`SELECT * FROM departments;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
 
-const viewDepartments = () => {
+const addRole = () => {
     db.query(`SELECT * FROM departments;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
 
-const viewDepartments = () => {
+const addEmployee = () => {
     db.query(`SELECT * FROM departments;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
 
-const viewDepartments = () => {
+const updateEmployeeRole = () => {
     db.query(`SELECT * FROM departments;`, (err, res) => {
         if (err) throw err
         console.table(res)
-        multipleChoices()
+        questions();
     })
 
 };
 
+db.connect((err) => { 
+    if (err) throw err;
+    questions();
+});
