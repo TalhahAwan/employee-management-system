@@ -61,3 +61,67 @@ const questions = () => {
         }
     });
 }
+
+const viewDepartments = () => {
+    db.query(`SELECT * FROM departments;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewRoles = () => {
+    db.query(`SELECT * FROM roles;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewEmployees = () => {
+    db.query(`SELECT * FROM employees;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewDepartments = () => {
+    db.query(`SELECT * FROM departments;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewDepartments = () => {
+    db.query(`SELECT * FROM departments;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewDepartments = () => {
+    db.query(`SELECT * FROM departments;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
+const viewDepartments = () => {
+    db.query(`SELECT * FROM departments;`, (err, res) => {
+        if (err) throw err
+        console.table(res)
+        multipleChoices()
+    })
+
+};
+
