@@ -90,38 +90,41 @@ const viewEmployees = () => {
 };
 
 const addDepartment = () => {
-    db.query(`SELECT * FROM departments;`, (err, res) => {
-        if (err) throw err
-        console.table(res)
-        questions();
-    })
-
+    const sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
+    db.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("1 record inserted");
+      questions();
+    });
 };
 
 const addRole = () => {
-    db.query(`SELECT * FROM departments;`, (err, res) => {
-        if (err) throw err
-        console.table(res)
-        questions();
-    })
-
+    const sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
+    db.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("1 record inserted");
+      questions();
+    });
 };
 
 const addEmployee = () => {
-    db.query(`SELECT * FROM departments;`, (err, res) => {
-        if (err) throw err
-        console.table(res)
-        questions();
-    })
-
+    const sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
+    db.query(sql, function (err, result) {
+      if (err) throw err;
+      console.log("1 record inserted");
+      questions();
+    });
 };
 
 const updateEmployeeRole = () => {
-    db.query(`SELECT * FROM departments;`, (err, res) => {
-        if (err) throw err
-        console.table(res)
-        questions();
-    })
+    con.connect(function(err) {
+        if (err) throw err;
+        var sql = "UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valley 345'";
+        con.query(sql, function (err, result) {
+          if (err) throw err;
+          console.log(result.affectedRows + " record(s) updated");
+        });
+      });
 
 };
 
