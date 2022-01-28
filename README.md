@@ -17,6 +17,7 @@ I learned better understanding of SQL.
 ## Usage
 ![system](https://user-images.githubusercontent.com/88115822/151474662-d3ffc442-3187-4207-ac74-9fb4a77496c6.PNG)
 
+https://watch.screencastify.com/v/DwwMQwHl24ivNFm5bvoQ
 
 ## Credits
 https://www.markdownguide.org/basic-syntax/
