@@ -15,6 +15,7 @@ I learned better understanding of SQL.
 4. You should now be able to view the database.
 
 ## Usage
+![system](https://user-images.githubusercontent.com/88115822/151474662-d3ffc442-3187-4207-ac74-9fb4a77496c6.PNG)
 
 
 ## Credits
