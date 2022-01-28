@@ -90,11 +90,17 @@ const viewEmployees = () => {
 };
 
 const addDepartment = () => {
-    const sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
-    db.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log("1 record inserted");
-      questions();
+    inquirer.prompt({
+        name: 'departmentName',
+        type: 'input',
+        message: 'Enter the department name: '
+    })
+    .then ((response) => {
+        db.query(`INSERT INTO department (name) VALUES ('${response.departmentName}');`, (err, result) => {
+        if (err) throw err;
+        console.log("Department added");
+        questions();
+        });
     });
 };
 
